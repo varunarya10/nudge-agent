@@ -1,0 +1,19 @@
+[project]
+name = "nudge-agent"
+version = "0.1.0"
+description = "Telegram chatbot that sends reminders to family and politely re-asks until the reminder is acknowledged."
+readme = "README.md"
+authors = [
+    { name = "Varun Arya", email = "10206499+varunarya10@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "python-telegram-bot>=22.8",
+]
+
+[project.scripts]
+nudge-agent = "nudge_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
